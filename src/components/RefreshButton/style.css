@@ -1,0 +1,30 @@
+.refresh-btn-container{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    height: 100px;
+}
+
+.btn {
+    width: max-content;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 7px 25px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn.btn-refresh{
+    background: dodgerblue;
+    color: white;
+}
+
+
+.refresh-btn-container.vertical-mode{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    left: 0;
+}

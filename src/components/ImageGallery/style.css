@@ -1,0 +1,27 @@
+.image-gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    width: 100%;
+}
+
+.image-not-found-message{
+    font-size: 40px;
+    color: darkslategray;
+}
+
+.vertical-mode {
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 10px;
+    width: auto;
+}
+
+.horizontal-mode {
+    flex-direction: row;
+}

@@ -1,0 +1,28 @@
+.image-configuration-container{
+    margin: 20px;
+    position: absolute;
+    top: 10%;
+    right: 15%;
+}
+
+.config-icon{
+    border: 1px solid rgba(161,168,167,0.56);
+    border-radius: 4px;
+    background: rgba(177,178,255,0.13);
+    padding: 10px 15px;
+    margin: 10px 2px;
+    cursor: pointer;
+}
+
+.config-icon.display-mode-icon.active{
+    background: rgba(161,168,167,1);
+}
+
+.config-icon.display-mode-icon.active svg{
+    color: white;
+}
+
+.config-icon.display-mode-icon svg {
+    color: rgba(161,168,167,1)
+}
+

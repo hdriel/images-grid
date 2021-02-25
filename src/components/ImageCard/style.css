@@ -1,0 +1,82 @@
+:root {
+    --card-width: 250px;
+    --image-width: 250px;
+    --image-height: 250px;
+}
+
+.image-card {
+    width: var(--card-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 1px 0 8px 1px #888888;
+    cursor: pointer;
+}
+
+.image-card:hover > .image-url {
+    filter: brightness(30%) !important;
+}
+
+.image-card:hover > .image-description {
+    visibility: visible;
+}
+
+.image-card .image-url {
+    width: var(--image-width);
+    height: var(--image-height);
+    border-radius: 15px;
+    overflow: hidden;
+    filter: brightness(85%);
+}
+
+.image-card .image-url img {
+    width: inherit;
+    height: inherit;
+}
+
+.image-card .image-description {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    user-select: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.image-description::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+.image-description {
+    visibility: hidden;
+}
+
+.image-card .image-likes {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    width: auto;
+
+    position: absolute;
+    left: 15px;
+    bottom: 5px;
+    color: white;
+}
+
+.image-card .image-likes > span {
+    margin-left: 5px;
+}
