@@ -31,7 +31,7 @@ You will also see any lint errors in the console.
 * I tried to stick to the screenshots as much as possible
 <br/><br/>
 
-#Future features/planning:
+# Future features/planning:
 * SASS - add node-sass to compile scss into css files.
 * dot.env - add dot env file per environment 
 * webpack/gulp - add this to compile all react code into one bundle minify js file and resources.
@@ -43,9 +43,9 @@ You will also see any lint errors in the console.
 Hope the mission will satisfy you, I'm not sure how much can really be accomplished in just 3 hours :-/
 
 
-###Author: Hadriel Benjo
+### Author: Hadriel Benjo
 
-###screenshot 
+### screenshot 
 ![img.png](./screenshots/img-horizontal-1.png)
 ![img.png](./screenshots/img-horizontal-2.png)
 ![img.png](./screenshots/img-vertical-1.png)
