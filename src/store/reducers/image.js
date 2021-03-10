@@ -28,7 +28,7 @@ export default function imageReducer(state = initialState, action){
             };
 
         case UPDATE_CACHE:
-            const [fullMatch, amount, unit] = /^(\d+) *?(s|m|h|d|sec|min|minutes|hours?|days?)$/i.exec(IMAGE_CACHE_EXPIRED_ABOUT) || [];
+            const [fullMatch, amount, unit] = /^(\d+) *?(year|years|y|month|months|M|week|weeks|w|day|days|d|hour|hours|h|minute|minutes|m|second|seconds|s|millisecond|milliseconds|ms)$/i.exec(IMAGE_CACHE_EXPIRED_ABOUT) || [];
             if(!fullMatch){
                 console.warn(`${IMAGE_CACHE_EXPIRED_ABOUT} Is not valid expired cache format, cache data is not will updating`);
                 return state;
